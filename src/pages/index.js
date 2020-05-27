@@ -4,17 +4,17 @@ import Layout from "../components/common/Layout"
 import SEO from "../components/common/Seo"
 import theme from "../components/common/theme"
 
-import Header from "../components/sections/header"
-import Features from "../components/sections/features"
-import Footer from "../components/sections/footer"
-import GetStarted from "../components/sections/getstarted"
+import Header from "../components/sections/HeaderSection"
+import FeaturesSection from "../components/sections/FeaturesSection"
+import Footer from "../components/sections/FooterSection"
+import GetStartedSection from "../components/sections/GetStartedSection"
 
 const IndexPage = () => (
   <Layout theme={theme}>
     <SEO title="Home" />
     <Header />
-    <Features />
-    <GetStarted />
+    <FeaturesSection />
+    <GetStartedSection />
     <Footer />
   </Layout>
 )

@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import HeaderImage from '../blocks/HeaderImage'
 import HeaderFormSubtitle from '../blocks/HeaderFormSubtitle'
-import HeaderSection from '../blocks/HeaderSection'
+import Header from '../blocks/Header'
 import HeaderForm from '../blocks/HeaderForm'
 import HeaderTextGroup from '../blocks/HeaderTextGroup'
 
@@ -24,9 +24,9 @@ const HeaderText = () => {
 }
 
 
-const Header = () => {
+const HeaderSection = () => {
   return (
-    <HeaderSection>
+    <Header>
           <HeaderTextGroup kicker="WET PETS">
             <HeaderText />
             <HeaderForm 
@@ -35,7 +35,7 @@ const Header = () => {
               />
             <HeaderFormSubtitle
                 text="Looking for goldfish enthusiasts like yourself?"
-                link="/" 
+                linkURL="/" 
                 linkText="Join our community"
               />
           </HeaderTextGroup>
@@ -43,7 +43,7 @@ const Header = () => {
             <HeaderImage />
             <br />
           </ImageWrapper>
-    </HeaderSection>
+    </Header>
   )
 }
 
@@ -55,4 +55,4 @@ const ImageWrapper = styled.div`
   }
 `
 
-export default Header
+export default HeaderSection

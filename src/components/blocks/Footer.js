@@ -1,46 +1,36 @@
-import React from "react"
+import React, {Component} from "react"
 import styled from "styled-components"
 
 import Container from '../elements/Container';
 
 
-const Footer = () => (
-  <FooterWrapper id="footer">
-    <FooterColumnContainer>
-      <FooterColumn>
-        <span>Features</span>
-        <ul>
-          <li>Hearing</li>
-          <li>Vision</li>
-        </ul>
-      </FooterColumn>
-      <FooterColumn>
-        <span>Resources</span>
-        <ul>
-          <li>Compare</li>
-          <li>Blog</li>
-        </ul>
-      </FooterColumn>
-      <FooterColumn>
-        <span>Company</span>
-        <ul>
-          <li>About Us</li>
-          <li>Careers</li>
-        </ul>
-      </FooterColumn>
-      <FooterColumn>
-        <span>Social</span>
-        <ul>
-          <li>LinkedIn</li>
-          <li>Instagram</li>
-        </ul>
-      </FooterColumn>
-    </FooterColumnContainer>
-    <BrandContainer>
-      <Logo>Goldfish inc.</Logo>
-    </BrandContainer>
-  </FooterWrapper>
-)
+class Footer extends Component {
+
+    static Column = ({title, items}) => {
+        return(
+          <FooterColumn>
+            <span>{title}</span>
+            <ul>
+                {items.map(item => <li>{item}</li>)}
+            </ul>
+        </FooterColumn>
+        )
+
+    }
+  
+    render() {
+        return (
+            <FooterWrapper>
+                <FooterColumnContainer>
+                    {this.props.children}
+                    <BrandContainer>
+                    <Logo>{this.props.logo}</Logo>
+                    </BrandContainer>
+                </FooterColumnContainer>
+            </FooterWrapper>
+        )
+    }
+}
 
 const FooterWrapper = styled.footer`
   background-color: white;

@@ -6,7 +6,7 @@ const FormSubtitle = ({text, linkURL, linkText}) => {
     return (
         <Span>
             {text}
-            <FormLink to="/">{linkText}</FormLink>
+            <FormLink to={linkURL}>{linkText}</FormLink>
         </Span>
     )
 }
