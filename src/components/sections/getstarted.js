@@ -3,12 +3,13 @@ import styled from "styled-components"
 
 import Section from '../elements/Section';
 import Container from '../elements/Container';
+import Button from '../elements/Button'
 
 const GetStarted = () => (
   <StyledSection>
     <GetStartedContainer>
       <GetStartedTitle>Try a goldfish for free.</GetStartedTitle>
-      <TryItButton>Get Started</TryItButton>
+      <Button>Get Started</Button>
       <Subtitle>No credit card required.</Subtitle>
     </GetStartedContainer>
   </StyledSection>
@@ -32,35 +33,6 @@ const GetStartedContainer = styled(Container)`
 const GetStartedTitle = styled.h3`
   margin: 0 auto 32px;
   text-align: center;
-`
-
-const TryItButton = styled.button`
-  font-weight: 500;
-  font-size: 14px;
-  color: white;
-  letter-spacing: 1px;
-  height: 60px;
-  display: block;
-  margin-left: 8px;
-  text-transform: uppercase;
-  cursor: pointer;
-  white-space: nowrap;
-  background: ${props => props.theme.color.secondary};
-  border-radius: 4px;
-  padding: 0px 40px;
-  border-width: 0px;
-  border-style: initial;
-  border-color: initial;
-  border-image: initial;
-  outline: 0px;
-  &:hover {
-    box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
-  }
-  @media (max-width: ${props => props.theme.screen.md}) {
-  }
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    margin-left: 0;
-  }
 `
 
 const Subtitle = styled.span`
