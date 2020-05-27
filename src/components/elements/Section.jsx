@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Section = styled.section`
+const Section = styled.section`
   padding: 80px 0;
   overflow: hidden;
   background-color: ${props => {
@@ -26,3 +26,4 @@ export const Section = styled.section`
         : props.theme.color.primary
     }`};
 `
+export default Section;
