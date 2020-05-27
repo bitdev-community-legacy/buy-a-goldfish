@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-import { Container, Section } from "../global"
+import Section from '../elements/Section';
+import Container from '../elements/Container';
 
 const GetStarted = () => (
   <StyledSection>

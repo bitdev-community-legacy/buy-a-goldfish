@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 
-import { Container } from "../global"
+import Container from '../elements/Container';
 
 const Header = () => {
   const data = useStaticQuery(graphql`
