@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const HeaderTextGroup = ({kicker, children}) => {
     return(
@@ -10,6 +11,10 @@ const HeaderTextGroup = ({kicker, children}) => {
     )
 }
 
+HeaderTextGroup.propTypes = {
+    kicker: PropTypes.string.isRequired,
+    children: PropTypes.string.isRequired
+}
 
 const TextGroup = styled.div`
   margin: 0;

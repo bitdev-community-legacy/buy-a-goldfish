@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import PropTypes from "prop-types"
 
 const Container = styled.div`
   max-width: 1200px;
@@ -28,5 +29,9 @@ const Container = styled.div`
     max-width: 1200px !important;
   `};
 `
+
+Container.propTypes = {
+  theme: PropTypes.object.isRequired
+}
 
 export default Container;

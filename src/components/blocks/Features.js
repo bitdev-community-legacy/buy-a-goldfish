@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import styled from "styled-components"
+import PropTypes from "prop-types";
 
 import Section from '../elements/Section';
 import Container from '../elements/Container';
@@ -41,6 +42,12 @@ export default class Features extends Component {
     }
 
 } 
+
+Features.propTypes = {
+  subtitle: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired
+}
 
 
 const StyledContainer = styled(Container)``

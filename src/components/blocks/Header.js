@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import Container from '../elements/Container';
 
@@ -14,6 +15,12 @@ const HeaderSection = ({children}) => {
         </HeaderWrapper>
     )
 }
+
+
+HeaderSection.propTypes = {
+  children: PropTypes.node.isRequired
+}
+
 
 
 const HeaderWrapper = styled.header`

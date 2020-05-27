@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import Button from '../elements/Button'
 import Section from '../elements/section'
@@ -15,7 +16,14 @@ const GetStarted = ({title, ctaButton, subtitle}) => (
     </StyledSection>
   )
   
-  export default GetStarted
+
+  GetStarted.propTypes = {
+      title: PropTypes.string.isRequired,
+      ctaButton: PropTypes.string.isRequired,
+      subtile: PropTypes.string.isRequired,
+  }
+
+
   
   const StyledSection = styled(Section)`
     background-color: ${props => props.theme.color.background.light};
@@ -41,3 +49,6 @@ const GetStarted = ({title, ctaButton, subtitle}) => (
     font-size: 14px;
     color: ${props => props.theme.color.primary};
   `
+
+
+export default GetStarted

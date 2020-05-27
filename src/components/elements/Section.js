@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Section = styled.section`
   padding: 80px 0;
@@ -26,4 +27,10 @@ const Section = styled.section`
         : props.theme.color.primary
     }`};
 `
+
+Section.propTypes = {
+  /** A theme object */
+  theme: PropTypes.object.isRequired
+}
+
 export default Section;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import {Link} from 'gatsby';
 
 const FormSubtitle = ({text, linkURL, linkText}) => {
@@ -9,6 +10,12 @@ const FormSubtitle = ({text, linkURL, linkText}) => {
             <FormLink to={linkURL}>{linkText}</FormLink>
         </Span>
     )
+}
+
+FormSubtitle.propTypes = {
+  text: PropTypes.string.isRequired, 
+  linkURL: PropTypes.string.isRequired,
+  linkText: PropTypes.string.isRequired
 }
 
 const Span = styled.span`

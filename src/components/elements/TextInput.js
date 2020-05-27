@@ -30,7 +30,7 @@ const TextInput = styled.input`
 
 TextInput.propTypes = {
     /** A theme object */
-    theme: PropTypes.object
+    theme: PropTypes.object.isRequired
 }
 
 export default TextInput;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 
 const ExternalImage = styled.img`
@@ -11,5 +12,10 @@ const ExternalImage = styled.img`
     display: none;
   }
 `
+
+Section.propTypes = {
+  /** A theme object */
+  theme: PropTypes.object.isRequired
+}
 
 export default ExternalImage;

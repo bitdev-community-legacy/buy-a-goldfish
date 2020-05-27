@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 import Button from '../elements/Button'
 import TextInput from '../elements/TextInput'
@@ -12,6 +13,11 @@ const HeaderForm = ({inputPlaceholder, buttonLabel}) => {
         </Form>
     )
 
+}
+
+HeaderForm.propTypes = {
+    inputPlaceholder: PropTypes.string.isRequired,
+    buttonLabel: PropTypes.string.isRequired
 }
 
 const Form = styled.form`
