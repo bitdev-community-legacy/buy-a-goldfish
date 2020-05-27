@@ -7,8 +7,8 @@ import Container from '../elements/Container';
 const GetStarted = () => (
   <StyledSection>
     <GetStartedContainer>
-      <GetStartedTitle>Be the first to get the beta</GetStartedTitle>
-      <TryItButton>Get early access</TryItButton>
+      <GetStartedTitle>Try a goldfish for free.</GetStartedTitle>
+      <TryItButton>Get Started</TryItButton>
       <Subtitle>No credit card required.</Subtitle>
     </GetStartedContainer>
   </StyledSection>

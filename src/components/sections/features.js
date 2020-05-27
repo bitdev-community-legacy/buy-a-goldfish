@@ -8,41 +8,40 @@ const Features = () => (
   <Section id="features">
     <StyledContainer>
       <Subtitle>Features</Subtitle>
-      <SectionTitle>Smart money management</SectionTitle>
+      <SectionTitle>Senses & Cognition</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
-          <FeatureTitle>Notifications</FeatureTitle>
+          <FeatureTitle>Vision</FeatureTitle>
           <FeatureText>
-            Receive budget and spending alerts based on your favorite triggers.
+           Four kinds of cone cells for red, green, blue and ultraviolet.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Security</FeatureTitle>
+          <FeatureTitle>Hearing</FeatureTitle>
           <FeatureText>
-            Your data is always safe with us as we use the latest security
-            protocols.
+           Two otoliths, permitting the detection of sound particle motion.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Automation</FeatureTitle>
+          <FeatureTitle>Smell</FeatureTitle>
           <FeatureText>
-            Create smart automated workflows and triggers for your money.
+            Two blind pits with smell-sensing receptors inside
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Aggregation</FeatureTitle>
+          <FeatureTitle>Social Skills</FeatureTitle>
           <FeatureText>
-            Easily link up to 5 banks to your finance account.
+            Always happy to meet you - hate other people.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Payments</FeatureTitle>
-          <FeatureText>Send money to friends and family with ease.</FeatureText>
+          <FeatureTitle>Associative Learning</FeatureTitle>
+          <FeatureText>Can learn new tricks.</FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Rewards</FeatureTitle>
+          <FeatureTitle>Taste</FeatureTitle>
           <FeatureText>
-            High interest and rewards for hitting your goals.
+            Aren't snobbish about food.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>

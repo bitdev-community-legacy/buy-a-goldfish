@@ -10,8 +10,8 @@ const Footer = () => (
       <FooterColumn>
         <span>Features</span>
         <ul>
-          <li>Automation</li>
-          <li>Rewards</li>
+          <li>Hearing</li>
+          <li>Vision</li>
         </ul>
       </FooterColumn>
       <FooterColumn>
@@ -37,7 +37,7 @@ const Footer = () => (
       </FooterColumn>
     </FooterColumnContainer>
     <BrandContainer>
-      <Logo>Finance</Logo>
+      <Logo>Goldfish inc.</Logo>
     </BrandContainer>
   </FooterWrapper>
 )
