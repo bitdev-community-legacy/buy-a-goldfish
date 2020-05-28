@@ -7,6 +7,8 @@ exports["default"] = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject() {
@@ -38,7 +40,11 @@ var Section = _styledComponents["default"].section(_templateObject(), function (
   return props.accent && "background-color: ".concat(props.accent === "secondary" ? props.theme.color.white.dark : props.theme.color.primary);
 });
 
+Section.propTypes = {
+  /** A theme object */
+  theme: _propTypes["default"].object.isRequired
+};
 var _default = Section;
 exports["default"] = _default;
 
-//# sourceMappingURL=Section.jsx.map
+//# sourceMappingURL=Section.js.map

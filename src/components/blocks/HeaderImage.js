@@ -19,9 +19,9 @@ const InternalStyledImage = () => {
   `)
 
   return (
-          <>
+          <ImageWrapper>
             <StyledImage fluid={data.file.childImageSharp.fluid} /> 
-          </>
+          </ImageWrapper>
   )
 }
 
@@ -36,5 +36,12 @@ const StyledImage = styled(Img)`
   @media (max-width: ${props => props.theme.screen.sm}) {
     width: 300px;
     display: none;
+  }
+`
+const ImageWrapper = styled.div`
+  justify-self: end;
+  align-self: center;
+  @media (max-width: ${props => props.theme.screen.md}) {
+    justify-self: center;
   }
 `

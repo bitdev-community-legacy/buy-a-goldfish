@@ -1,5 +1,4 @@
 import React from "react"
-import styled from "styled-components"
 
 import HeaderImage from '../blocks/HeaderImage'
 import HeaderFormSubtitle from '../blocks/HeaderFormSubtitle'
@@ -39,20 +38,11 @@ const HeaderSection = () => {
                 linkText="Join our community"
               />
           </HeaderTextGroup>
-          <ImageWrapper>
-            <HeaderImage />
-            <br />
-          </ImageWrapper>
+          <HeaderImage />
     </Header>
   )
 }
 
-const ImageWrapper = styled.div`
-  justify-self: end;
-  align-self: center;
-  @media (max-width: ${props => props.theme.screen.md}) {
-    justify-self: center;
-  }
-`
+
 
 export default HeaderSection

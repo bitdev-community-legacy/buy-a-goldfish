@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import Button from '../elements/Button'
-import Section from '../elements/section'
 import Container from '../elements/Container'
+import Section from '../elements/Section'
 
 const GetStarted = ({title, ctaButton, subtitle}) => (
     <StyledSection>

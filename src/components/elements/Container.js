@@ -31,6 +31,7 @@ const Container = styled.div`
 `
 
 Container.propTypes = {
+  /** A theme object */
   theme: PropTypes.object.isRequired
 }
 

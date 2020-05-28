@@ -41,4 +41,4 @@ Button.propTypes = {
 var _default = Button;
 exports["default"] = _default;
 
-//# sourceMappingURL=Button.jsx.map
+//# sourceMappingURL=Button.js.map

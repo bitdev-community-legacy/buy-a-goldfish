@@ -37,9 +37,9 @@ var TextInput = _styledComponents["default"].input(_templateObject(), function (
 
 TextInput.propTypes = {
   /** A theme object */
-  theme: _propTypes["default"].object
+  theme: _propTypes["default"].object.isRequired
 };
 var _default = TextInput;
 exports["default"] = _default;
 
-//# sourceMappingURL=TextInput.jsx.map
+//# sourceMappingURL=TextInput.js.map

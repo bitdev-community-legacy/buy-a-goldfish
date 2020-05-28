@@ -7,6 +7,8 @@ exports["default"] = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject() {
@@ -33,7 +35,11 @@ var Container = _styledComponents["default"].div(_templateObject(), function (pr
   return props.fluid && "\n    max-width: 1200px !important;\n  ";
 });
 
+Container.propTypes = {
+  /** A theme object */
+  theme: _propTypes["default"].object.isRequired
+};
 var _default = Container;
 exports["default"] = _default;
 
-//# sourceMappingURL=Container.jsx.map
+//# sourceMappingURL=Container.js.map

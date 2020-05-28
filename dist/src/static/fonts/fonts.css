@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Heebo Extra Bold";
+  src: url(./Heebo-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Heebo Medium";
+  src: url(./Heebo-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Heebo Normal";
+  src: url(./Heebo-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Heebo Light";
+  src: url(./Heebo-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Heebo Black";
+  src: url(./Heebo-Black.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Heebo Bold";
+  src: url(./Heebo-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Heebo Semibold";
+  src: url(./Heebo-Bold.ttf);
+  font-weight: 500;
+}
